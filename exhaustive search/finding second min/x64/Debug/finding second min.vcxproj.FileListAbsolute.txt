@@ -1,0 +1,1 @@
+C:\Projects\CPP\algorithms\exhaustive search\finding second min\x64\Debug\finding second min.exe
