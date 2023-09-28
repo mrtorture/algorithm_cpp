@@ -1,3 +1,23 @@
+//SW Expert Academy #1244. Maximum Reward(Exhaustive Search)
+
+//namespace > using namespace means that copy and paste definitions
+//function prototype > declare before use
+//pointer, reference, const > use reference and const reference
+//recursive function > patterns shallow or deep copy of input and output
+//vector, set
+//copy type of =, insert(), push_back() > deep copy
+//allocation in memory > stack(info), heap(data)
+//data structure in memory > array(vector), tree(set), hash(unordered_set)
+//vector use case(using array) > set size and use position
+//vector use case(using reallocation) > set no size and use push_back()
+//set use case(using tree): set no size and use insert()
+//what if data is stored in stack and shallow copied and the stack frame is over
+//what if data is stored in heap and deep copied each time over and over
+//iterator > pointer
+//range-based loop > must not change range during loop
+//recursive from/to loop
+//debugger
+
 #include <iostream>
 #include <vector>
 #include <set>
@@ -5,18 +25,11 @@ using namespace std;
 
 vector<int> get_vector(int num);
 void get_vector_r(vector<int>& vo, int num);
-void swap(set<vector<int>>& so, const set<vector<int>>& si, int e);
+void swap(set<vector<int>>& svo, const vector<int>& vi, int e);
 void print_vector(const vector<int>& v);
-void print_vectors(const set<vector<int>> &so, int e);
+void print_vectors(const set<vector<int>> &sv, int e);
 int is_less_than(const vector<int>& a, const vector<int>& b);
 
-//namespace
-//pointer, reference, const
-//recursive function
-//vector, set
-//iterator
-//range-based loop, auto
-//debugger
 int main()
 {
     freopen("../input.txt", "r", stdin);
@@ -24,28 +37,33 @@ int main()
     int n;
     cin >> n;
 
-    vector<int> vi(n);
+    vector<int> ii(n);
     vector<int> e(n);
     for (int i = 0; i < n; i++) {
-        cin >> vi[i];
+        cin >> ii[i];
         cin >> e[i];
     }
 
-    vector<vector<int>> vo(n);
-    vector<set<vector<int>>> si(n);
+//    stored in stack(info), heap(array)
+//    set enough size to avoid reallocation and copy
+//    set size means that set capacity and initialize elements in array 0
+    vector<vector<int>> vi(n);
     for (int i = 0; i < n; i++) {
-        get_vector_r(vo[i], vi[i]);
-        si[i].insert(vo[i]);
+        vector<int> v;
+        get_vector_r(v, ii[i]);
+//        vector use case: set size and use position
+        vi[i] = v;
     }
 
-    vector<set<vector<int>>> so(n);
+    vector<set<vector<int>>> svo(n);
     for (int i = 0; i < n; i++) {
-        swap(so[i], si[i], e[i]);
+        swap(svo[i], vi[i], e[i]);
     }
 
     for (int i = 0; i < n; i++) {
-        vector<int> max = *(so[i].begin());
-        for (const vector<int>& v: so[i]) {
+//        iterator is pointer
+        vector<int> max = *(svo[i].begin());
+        for (const vector<int>& v: svo[i]) {
             if (is_less_than(max, v)) {
                 max = v;
             }
@@ -72,6 +90,7 @@ void print_vector(const vector<int>& v) {
 vector<int> get_vector(int num) {
     if (num < 10) {
         vector<int> v;
+//        vector use case: set no size and use push_back()
         v.push_back(num);
         return v;
     }
@@ -102,45 +121,45 @@ void get_vector_r(vector<int>& vo, int num) {
 //in this case reference variable is dangle when stack frame is clear
 
 //const reference -> pass by reference
-void swap(set<vector<int>>& so, const set<vector<int>>& si, int e) {
+void swap(set<vector<int>>& svo, const vector<int>& vi, int e) {
 //    cout << e << " times swap function was called." << endl;
     if (e < 1) {
-        for (const vector<int>& vi: si) {
-//            container inserts copy of original
-            so.insert(vi);
-        }
-//        print_vectors(so, e);
+//        stored in stack and deep copy
+        svo.insert(vi);
+//        print_vectors(svo, e);
         return;
     }
 
-    swap(so, si, e - 1);
-    set<vector<int>> st;
+    swap(svo, vi, e - 1);
+//    stored in stack(info), heap(tree)
+//    no constructor getting size as parameter
+    set<vector<int>> svt;
 //    range-based loop works using iterator(++) internally
 //    range-based loop cannot be applied to the collection whose begin, end are not known
 //    range in range-based loop must not change during loop
-    for (const vector<int>& vi : so) {
-        for (int i = 0; i < vi.size(); i++) {
-            for (int j = i + 1; j < vi.size(); j++) {
-                vector<int> vo = vi;
+    for (const vector<int>& vi2 : svo) {
+        for (int i = 0; i < vi2.size(); i++) {
+            for (int j = i + 1; j < vi2.size(); j++) {
+//                deep copy
+                vector<int> vo = vi2;
                 int tmp = vo[i];
                 vo[i] = vo[j];
                 vo[j] = tmp;
-//                container inserts copy of original
-                st.insert(vo);
+//                stored in stack and deep copy
+//                set use case: set no size and use insert()
+                svt.insert(vo);
             }
         }
     }
-    so.clear();
-//    container inserts copy of original
-    so.insert(st.begin(), st.end());
-
-//    print_vectors(so, e);
+//    stored in stack and deep copy
+    svo = svt;
+//    print_vectors(svo, e);
 }
 
-void print_vectors(const set<vector<int>> &so, int e) {
-    cout << "after " << e << " times swap, so.size() : " << so.size() << endl;
+void print_vectors(const set<vector<int>> &sv, int e) {
+    cout << "after " << e << " times swap, sv.size() : " << sv.size() << endl;
     int i = 1;
-    for (const vector<int>& v: so) {
+    for (const vector<int>& v: sv) {
         cout << i++ << ": ";
         for (int num: v) {
             cout << num << " ";
