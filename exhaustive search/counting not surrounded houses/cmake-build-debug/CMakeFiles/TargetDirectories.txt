@@ -1,0 +1,3 @@
+C:/Projects/CPP/algorithms/exhaustive search/counting not surrounded houses/cmake-build-debug/CMakeFiles/counting_not_surrounded_houses.dir
+C:/Projects/CPP/algorithms/exhaustive search/counting not surrounded houses/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Projects/CPP/algorithms/exhaustive search/counting not surrounded houses/cmake-build-debug/CMakeFiles/rebuild_cache.dir
