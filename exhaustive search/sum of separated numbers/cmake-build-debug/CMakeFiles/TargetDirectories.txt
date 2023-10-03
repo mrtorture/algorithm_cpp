@@ -1,0 +1,3 @@
+C:/Projects/CPP/algorithms/exhaustive search/sum of separated numbers/cmake-build-debug/CMakeFiles/sum_of_separated_numbers.dir
+C:/Projects/CPP/algorithms/exhaustive search/sum of separated numbers/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Projects/CPP/algorithms/exhaustive search/sum of separated numbers/cmake-build-debug/CMakeFiles/rebuild_cache.dir

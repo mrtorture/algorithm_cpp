@@ -1,0 +1,4 @@
+"C:\Users\joejoe\AppData\Local\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Users/joejoe/AppData/Local/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Projects\CPP\algorithms\exhaustive search\sum of separated numbers" -B "C:\Projects\CPP\algorithms\exhaustive search\sum of separated numbers\cmake-build-debug"
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Projects/CPP/algorithms/exhaustive search/sum of separated numbers/cmake-build-debug

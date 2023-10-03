@@ -1,0 +1,24 @@
+# ninja log v5
+7	303	7180180957707344	build.ninja	2b7280e8cea726f2
+622	763	7180180611950707	sum_of_separated_numbers.exe	c0601504955a798f
+4	621	7180180610578991	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+8	694	7180182134505746	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+695	839	7180182135907703	sum_of_separated_numbers.exe	c0601504955a798f
+5	719	7180182271656183	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+720	858	7180182272987950	sum_of_separated_numbers.exe	c0601504955a798f
+6	664	7180182371680341	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+665	812	7180182373112697	sum_of_separated_numbers.exe	c0601504955a798f
+5	640	7180185375341788	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+641	788	7180185376778988	sum_of_separated_numbers.exe	c0601504955a798f
+5	694	7180203550095375	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+695	867	7180203551772006	sum_of_separated_numbers.exe	c0601504955a798f
+6	685	7180205622969581	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+686	831	7180205624371819	sum_of_separated_numbers.exe	c0601504955a798f
+4	671	7180206521029936	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+672	813	7180206522407736	sum_of_separated_numbers.exe	c0601504955a798f
+4	632	7180207519130374	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+633	780	7180207520583247	sum_of_separated_numbers.exe	c0601504955a798f
+4	653	7180209227915051	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+654	802	7180209229357495	sum_of_separated_numbers.exe	c0601504955a798f
+5	666	7180211975285168	CMakeFiles/sum_of_separated_numbers.dir/main.cpp.obj	4c50a9f3ff8b4717
+666	809	7180211976655983	sum_of_separated_numbers.exe	c0601504955a798f
