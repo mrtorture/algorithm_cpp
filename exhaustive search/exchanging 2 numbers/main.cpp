@@ -1,4 +1,5 @@
-//SW Expert Academy #1244. Maximum Reward(Exhaustive Search)
+//SW Expert Academy #1244. Maximum Reward
+//exhaustive search, recursion
 
 //namespace > using namespace means that copy and paste definitions
 //function prototype > declare before use
@@ -15,7 +16,7 @@
 //what if data is stored in heap and deep copied each time over and over
 //iterator > pointer
 //range-based loop > must not change range during loop
-//recursive from/to loop
+//recursion from/to iteration
 //debugger
 
 #include <iostream>

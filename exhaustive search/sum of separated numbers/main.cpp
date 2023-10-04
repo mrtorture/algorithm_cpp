@@ -1,4 +1,5 @@
 //Algorithms and Data Structures for Problem-Solving Skills Problem 3.7
+//exhaustive search, iteration
 
 //string > size(), stoi()
 

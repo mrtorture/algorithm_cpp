@@ -1,4 +1,5 @@
-//SW Expert Academy #1206. View(Exhaustive Search)
+//SW Expert Academy #1206. View
+//exhaustive search, iteration
 
 #include <iostream>
 #include <vector>
