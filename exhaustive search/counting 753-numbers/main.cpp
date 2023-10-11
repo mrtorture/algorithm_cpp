@@ -1,6 +1,5 @@
 //Algorithms and Data Structures for Problem-Solving Skills Problem 4.5
-//exhaustive search, recursion
-//divide and conquer, recursion
+//exhaustive search, divide and conquer, recursion
 
 #include <iostream>
 #include <set>
