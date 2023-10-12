@@ -1,0 +1,3 @@
+C:/Projects/CPP/algorithms/exhaustive search/finding subtotal/cmake-build-debug/CMakeFiles/finding_subtotal.dir
+C:/Projects/CPP/algorithms/exhaustive search/finding subtotal/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Projects/CPP/algorithms/exhaustive search/finding subtotal/cmake-build-debug/CMakeFiles/rebuild_cache.dir

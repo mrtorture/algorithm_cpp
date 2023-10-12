@@ -1,0 +1,8 @@
+# ninja log v5
+7	243	7187959219696725	build.ninja	9474c849ee021601
+0	450	7187939811019294	CMakeFiles/finding_subtotal.dir/main.cpp.obj	2eb76a254c84e465
+455	616	7187939812657621	finding_subtotal.exe	2bb7b4100d0300f0
+4	955	7187972038236759	CMakeFiles/finding_subtotal.dir/main.cpp.obj	2eb76a254c84e465
+956	1125	7187972039898473	finding_subtotal.exe	2bb7b4100d0300f0
+5	1034	7187980565729843	CMakeFiles/finding_subtotal.dir/main.cpp.obj	2eb76a254c84e465
+1035	1204	7187980567390501	finding_subtotal.exe	2bb7b4100d0300f0
