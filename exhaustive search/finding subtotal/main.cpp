@@ -1,6 +1,6 @@
 //Algorithms and Data Structures for Problem-Solving Skills Problem 4.6
 //exhaustive search, recursion
-//memoization
+//dynamic programming, memoization
 //set, find(), end(), count()
 
 #include <iostream>
